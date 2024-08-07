@@ -1,0 +1,12 @@
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/bin/Debug/net8.0/camera-shop.Core.deps.json
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/bin/Debug/net8.0/camera-shop.Core.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/bin/Debug/net8.0/camera-shop.Core.pdb
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/camera-shop.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/camera-shop.Core.AssemblyInfoInputs.cache
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/camera-shop.Core.AssemblyInfo.cs
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/camera-shop.Core.csproj.CoreCompileInputs.cache
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/camera-shop.Core.sourcelink.json
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/camera-shop.Core.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/refint/camera-shop.Core.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/camera-shop.Core.pdb
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/ref/camera-shop.Core.dll
