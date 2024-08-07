@@ -7,4 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\camera-shop.Core\camera-shop.Core.csproj" />
+      <ProjectReference Include="..\camera-shop.Infrastructure\camera-shop.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>

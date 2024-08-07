@@ -18,7 +18,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\camera-shop.Application\camera-shop.Application.csproj" />
       <ProjectReference Include="..\camera-shop.Infrastructure\camera-shop.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\" />
     </ItemGroup>
 
 </Project>

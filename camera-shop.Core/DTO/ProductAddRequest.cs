@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using camera_shop.Core.Entities;
 
 namespace camera_shop.Core.DTO;
 
@@ -20,4 +21,19 @@ public class ProductAddRequest
     public byte[]? Image { get; set; }
     
     public int CategoryId { get; set; }
+}
+
+public static class ProductAddRequestExtensions
+{
+    public static Product ToProduct(this ProductAddRequest productRequest)
+    {
+        return new Product
+        {
+            Title = productRequest.Title,
+            Description = productRequest.Description,
+            Price = productRequest.Price,
+            Image = productRequest.Image,
+            CategoryId = productRequest.CategoryId
+        };
+    }
 }

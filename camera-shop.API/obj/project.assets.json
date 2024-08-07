@@ -1122,6 +1122,20 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "camera-shop.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "camera-shop.Core": "1.0.0",
+          "camera-shop.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/camera-shop.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/camera-shop.Application.dll": {}
+        }
+      },
       "camera-shop.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2998,6 +3012,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "camera-shop.Application/1.0.0": {
+      "type": "project",
+      "path": "../camera-shop.Application/camera-shop.Application.csproj",
+      "msbuildProject": "../camera-shop.Application/camera-shop.Application.csproj"
+    },
     "camera-shop.Core/1.0.0": {
       "type": "project",
       "path": "../camera-shop.Core/camera-shop.Core.csproj",
@@ -3014,6 +3033,7 @@
       "Microsoft.AspNetCore.OpenApi >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.7",
       "Swashbuckle.AspNetCore >= 6.4.0",
+      "camera-shop.Application >= 1.0.0",
       "camera-shop.Infrastructure >= 1.0.0"
     ]
   },
@@ -3042,6 +3062,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "/Users/data/Desktop/camera-shop-backend/camera-shop.Application/camera-shop.Application.csproj": {
+              "projectPath": "/Users/data/Desktop/camera-shop-backend/camera-shop.Application/camera-shop.Application.csproj"
+            },
             "/Users/data/Desktop/camera-shop-backend/camera-shop.Infrastructure/camera-shop.Infrastructure.csproj": {
               "projectPath": "/Users/data/Desktop/camera-shop-backend/camera-shop.Infrastructure/camera-shop.Infrastructure.csproj"
             }

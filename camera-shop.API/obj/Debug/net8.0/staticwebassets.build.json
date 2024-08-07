@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "oszwKdqsIiS9L1LotJgfEgaRXtrrKwYDDD98kcenAwc=",
+  "Hash": "hxDe8kWRWpyp6hcqSOKlPoHkjM+9V0F4+qAxk3nWiec=",
   "Source": "camera-shop.API",
   "BasePath": "_content/camera-shop.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "camera-shop.API/wwwroot",
+      "Source": "camera-shop.API",
+      "ContentRoot": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/",
+      "BasePath": "_content/camera-shop.API",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
