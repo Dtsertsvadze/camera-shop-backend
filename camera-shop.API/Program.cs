@@ -36,8 +36,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<IProductReaderRepository, ProductRepository>();
 builder.Services.AddScoped<IProductWriterRepository, ProductRepository>();
+builder.Services.AddScoped<ICategoryReaderRepository, CategoryRepository>();
+
 builder.Services.AddScoped<IProductReaderService, ProductService>();
 builder.Services.AddScoped<IProductWriterService, ProductService>();
+builder.Services.AddScoped<ICategoryReaderService, CategoryService>();
 builder.Services.AddSingleton<IImageService, FileSystemImageService>();
 
 var app = builder.Build();
