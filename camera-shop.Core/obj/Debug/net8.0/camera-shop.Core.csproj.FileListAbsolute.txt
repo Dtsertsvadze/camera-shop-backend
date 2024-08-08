@@ -10,3 +10,11 @@
 /Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/refint/camera-shop.Core.dll
 /Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/camera-shop.Core.pdb
 /Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/ref/camera-shop.Core.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/bin/Debug/net8.0/Microsoft.Net.Http.Headers.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/bin/Debug/net8.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/bin/Debug/net8.0/Microsoft.Extensions.Features.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/camera-shop.Core.csproj.AssemblyReference.cache
+/Users/data/Desktop/camera-shop-backend/camera-shop.Core/obj/Debug/net8.0/camera-shop.Core.csproj.CopyComplete

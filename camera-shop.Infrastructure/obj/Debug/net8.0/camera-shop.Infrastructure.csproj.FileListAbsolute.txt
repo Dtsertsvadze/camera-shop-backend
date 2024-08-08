@@ -16,3 +16,8 @@
 /Users/data/Desktop/camera-shop-backend/camera-shop.Infrastructure/obj/Debug/net8.0/camera-shop.Infrastructure.pdb
 /Users/data/Desktop/camera-shop-backend/camera-shop.Infrastructure/obj/Debug/net8.0/camera-shop.Infrastructure.genruntimeconfig.cache
 /Users/data/Desktop/camera-shop-backend/camera-shop.Infrastructure/obj/Debug/net8.0/ref/camera-shop.Infrastructure.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Infrastructure/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Infrastructure/bin/Debug/net8.0/Microsoft.Net.Http.Headers.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Infrastructure/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Infrastructure/bin/Debug/net8.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Infrastructure/bin/Debug/net8.0/Microsoft.Extensions.Features.dll

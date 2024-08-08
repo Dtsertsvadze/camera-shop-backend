@@ -1,3 +1,4 @@
+using System;
 using camera_shop.Core.Entities;
 
 namespace camera_shop.Core.DTO;
@@ -12,7 +13,7 @@ public class ProductResponse
     
     public decimal Price { get; set; }
     
-    public byte[]? Image { get; set; }
+    public string? ImageUrl { get; set; }
     
     public int CategoryId { get; set; }
     
@@ -29,9 +30,9 @@ public static class ProductResponseExtensions
             Title = product.Title,
             Description = product.Description,
             Price = product.Price,
-            Image = product.Image,
+            ImageUrl = product.ImageUrl,
             CategoryId = product.CategoryId,
-            CategoryName = product.Category?.Title
+            CategoryName = product.Category?.Title,
         };
     }
 }

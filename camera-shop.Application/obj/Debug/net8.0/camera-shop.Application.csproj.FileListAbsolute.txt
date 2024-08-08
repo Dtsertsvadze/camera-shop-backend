@@ -16,3 +16,11 @@
 /Users/data/Desktop/camera-shop-backend/camera-shop.Application/obj/Debug/net8.0/refint/camera-shop.Application.dll
 /Users/data/Desktop/camera-shop-backend/camera-shop.Application/obj/Debug/net8.0/camera-shop.Application.pdb
 /Users/data/Desktop/camera-shop-backend/camera-shop.Application/obj/Debug/net8.0/ref/camera-shop.Application.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Application/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Application/bin/Debug/net8.0/Microsoft.Net.Http.Headers.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Application/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Application/bin/Debug/net8.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Application/bin/Debug/net8.0/Microsoft.Extensions.Features.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Application/bin/Debug/net8.0/Microsoft.AspNetCore.Hosting.Abstractions.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Application/bin/Debug/net8.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Application/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Abstractions.dll

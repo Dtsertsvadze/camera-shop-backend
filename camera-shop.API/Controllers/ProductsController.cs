@@ -10,11 +10,13 @@ public class ProductsController : ControllerBase
 {
     private readonly IProductReaderService _productReaderService;
     private readonly IProductWriterService _productWriterService;
+    private readonly IImageService _imageService;
     
-    public ProductsController(IProductReaderService productReaderService, IProductWriterService productWriterService)
+    public ProductsController(IProductReaderService productReaderService, IProductWriterService productWriterService, IImageService imageService)
     {
         _productReaderService = productReaderService;
         _productWriterService = productWriterService;
+        _imageService = imageService;
     }
     
     [HttpGet]
@@ -36,10 +38,26 @@ public class ProductsController : ControllerBase
     }
     
     [HttpPost]
-    public async Task<IActionResult> CreateProduct([FromBody] ProductAddRequest productAddRequest)
+    [Route("[action]")]
+    public async Task<IActionResult> CreateProduct([FromForm] ProductAddRequest productAddRequest)
     {
-        var createdProduct = await _productWriterService.CreateProductAsync(productAddRequest);
-        
-        return Ok(createdProduct);
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        try
+        {
+            var createdProduct = await _productWriterService.CreateProductAsync(productAddRequest, productAddRequest.Image);
+            return CreatedAtAction(nameof(GetProductById), new { id = createdProduct.Id }, createdProduct);
+        }
+        catch (Exception ex) when (ex is ArgumentNullException or ArgumentException)
+        {
+            return BadRequest(ex.Message);
+        }
+        catch (Exception)
+        {
+            return StatusCode(500, "An unexpected error occurred while creating the product.");
+        }
     }
 }

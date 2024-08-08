@@ -1,0 +1,12 @@
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/bin/Debug/net8.0/camera-shop.Test.deps.json
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/bin/Debug/net8.0/camera-shop.Test.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/bin/Debug/net8.0/camera-shop.Test.pdb
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/obj/Debug/net8.0/camera-shop.Test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/obj/Debug/net8.0/camera-shop.Test.AssemblyInfoInputs.cache
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/obj/Debug/net8.0/camera-shop.Test.AssemblyInfo.cs
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/obj/Debug/net8.0/camera-shop.Test.csproj.CoreCompileInputs.cache
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/obj/Debug/net8.0/camera-shop.Test.sourcelink.json
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/obj/Debug/net8.0/camera-shop.Test.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/obj/Debug/net8.0/refint/camera-shop.Test.dll
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/obj/Debug/net8.0/camera-shop.Test.pdb
+/Users/data/Desktop/camera-shop-backend/camera-shop.Test/obj/Debug/net8.0/ref/camera-shop.Test.dll
