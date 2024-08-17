@@ -1,4 +1,4 @@
-using camera_shop.Core.ServiceContract;
+using camera_shop.Core.ServiceContract.Category;
 using Microsoft.AspNetCore.Mvc;
 
 namespace camera_shop.API.Controllers;
@@ -15,6 +15,7 @@ public class CategoriesController : ControllerBase
     }
     
     [HttpGet]
+    [Route("[action]")]
     public async Task<IActionResult> GetAllCategories()
     {
         var categories = await _categoryReaderService.GetAllCategoriesHierarchyAsync();

@@ -11,7 +11,7 @@ using camera_shop.Infrastructure.Data;
 namespace camera_shop.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240807134847_Initial")]
+    [Migration("20240817110250_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -124,6 +124,9 @@ namespace camera_shop.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("BrandId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("CategoryId")
                         .HasColumnType("INTEGER");
 
@@ -132,7 +135,7 @@ namespace camera_shop.Infrastructure.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ImageUrl")
+                    b.Property<string>("ImageUrls")
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
@@ -145,9 +148,67 @@ namespace camera_shop.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BrandId");
+
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("camera_shop.Core.Entities.ProductBrand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Canon"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Nikon"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Sony"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Fujifilm"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Panasonic"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Olympus"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Leica"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Pentax"
+                        });
                 });
 
             modelBuilder.Entity("camera_shop.Core.Entities.Category", b =>
@@ -161,11 +222,19 @@ namespace camera_shop.Infrastructure.Migrations
 
             modelBuilder.Entity("camera_shop.Core.Entities.Product", b =>
                 {
+                    b.HasOne("camera_shop.Core.Entities.ProductBrand", "Brand")
+                        .WithMany("Products")
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("camera_shop.Core.Entities.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Brand");
 
                     b.Navigation("Category");
                 });
@@ -175,6 +244,11 @@ namespace camera_shop.Infrastructure.Migrations
                     b.Navigation("Products");
 
                     b.Navigation("Subcategories");
+                });
+
+            modelBuilder.Entity("camera_shop.Core.Entities.ProductBrand", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

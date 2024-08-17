@@ -1,13 +1,14 @@
-using System;
+namespace camera_shop.Core.DTO.Product;
 using System.ComponentModel.DataAnnotations;
-using camera_shop.Core.Entities;
-using camera_shop.Core.Validators;
+using Validators;
 using Microsoft.AspNetCore.Http;
+using Entities;
 
-namespace camera_shop.Core.DTO;
-
-public class ProductAddRequest
+public class ProductUpdateRequest
 {
+    [Required]
+    public Guid Id { get; set; }
+
     [Required]
     [StringLength(40, ErrorMessage = "Title cannot be longer than 40 characters.")]
     public string? Title { get; set; }
@@ -20,26 +21,32 @@ public class ProductAddRequest
     [Range(0.01, 100000, ErrorMessage = "Price must be between 0.01 and 100,000.")]
     public decimal Price { get; set; }
     
-    [Required(ErrorMessage = "An image is required.")]
-    [AllowedExtensions(new string[] { ".jpg", ".jpeg", ".png", ".gif" })]
-    [MaxFileSize(5 * 1024 * 1024)]
-    public IFormFile? Image { get; set; }
-    
     [Required]
     public int CategoryId { get; set; }
+    
+    [Required]
+    public int BrandId { get; set; }
+
+    [Required]
+    public List<string> ImageUrls { get; set; }  = new List<string>();
+
+    [MaxFileCount(8, ErrorMessage = "You can upload a maximum of 8 images.")]
+    public List<IFormFile>? NewImages { get; set; }
 }
 
-public static class ProductAddRequestExtensions
+public static class ProductUpdateRequestExtensions
 {
-    public static Product ToProduct(this ProductAddRequest productRequest, string imageUrl)
+    public static Product ToProduct(this ProductUpdateRequest productRequest, List<string> imageUrls)
     {
         return new Product
         {
+            Id = productRequest.Id,
             Title = productRequest.Title,
             Description = productRequest.Description,
             Price = productRequest.Price,
             CategoryId = productRequest.CategoryId,
-            ImageUrl = imageUrl
+            BrandId = productRequest.BrandId,
+            ImageUrls = imageUrls
         };
     }
 }

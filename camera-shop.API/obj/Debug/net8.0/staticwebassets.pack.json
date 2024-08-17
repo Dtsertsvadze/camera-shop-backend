@@ -1,12 +1,72 @@
 {
   "Files": [
     {
-      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/5ed6e7ee-9e55-4a27-bb1c-4b08f7aa5fe2.jpg",
-      "PackagePath": "staticwebassets/images/products/5ed6e7ee-9e55-4a27-bb1c-4b08f7aa5fe2.jpg"
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/095620c9-1e47-453c-84fd-812f59c23884.jpeg",
+      "PackagePath": "staticwebassets/images/products/095620c9-1e47-453c-84fd-812f59c23884.jpeg"
     },
     {
-      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/770771e4-9b06-4176-b09d-46aa1410658d.png",
-      "PackagePath": "staticwebassets/images/products/770771e4-9b06-4176-b09d-46aa1410658d.png"
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/0d951dfd-d9bd-4b55-b842-7d01dd0fe8fb.jpeg",
+      "PackagePath": "staticwebassets/images/products/0d951dfd-d9bd-4b55-b842-7d01dd0fe8fb.jpeg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/0dc4108d-814e-4b3b-b853-b45934a4cd58.jpg",
+      "PackagePath": "staticwebassets/images/products/0dc4108d-814e-4b3b-b853-b45934a4cd58.jpg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/235bd9a3-dfd8-4e85-8475-d39c1b00ea22.jpeg",
+      "PackagePath": "staticwebassets/images/products/235bd9a3-dfd8-4e85-8475-d39c1b00ea22.jpeg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/2deaf8ba-fdbc-462d-9865-3076d7bc36af.jpg",
+      "PackagePath": "staticwebassets/images/products/2deaf8ba-fdbc-462d-9865-3076d7bc36af.jpg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/4008f9d0-fb68-4988-90b7-7cd538bc5611.jpeg",
+      "PackagePath": "staticwebassets/images/products/4008f9d0-fb68-4988-90b7-7cd538bc5611.jpeg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/4430d772-9907-447c-9b39-d967e1bdd2a9.jpeg",
+      "PackagePath": "staticwebassets/images/products/4430d772-9907-447c-9b39-d967e1bdd2a9.jpeg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/4a40c142-2420-4f8d-967f-857d00fef92d.jpeg",
+      "PackagePath": "staticwebassets/images/products/4a40c142-2420-4f8d-967f-857d00fef92d.jpeg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/610208a5-0a1b-4ddb-ae46-33b0ddf8dee0.png",
+      "PackagePath": "staticwebassets/images/products/610208a5-0a1b-4ddb-ae46-33b0ddf8dee0.png"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/65154b82-e9f7-493b-9b32-38b080617db9.jpeg",
+      "PackagePath": "staticwebassets/images/products/65154b82-e9f7-493b-9b32-38b080617db9.jpeg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/81c6db9f-bd60-4242-82bd-6a49ed101ce9.jpeg",
+      "PackagePath": "staticwebassets/images/products/81c6db9f-bd60-4242-82bd-6a49ed101ce9.jpeg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/c19a51fb-2a95-41f3-9398-14228875551a.jpeg",
+      "PackagePath": "staticwebassets/images/products/c19a51fb-2a95-41f3-9398-14228875551a.jpeg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/d74039f5-d448-4237-8cb1-363e5fd51786.jpeg",
+      "PackagePath": "staticwebassets/images/products/d74039f5-d448-4237-8cb1-363e5fd51786.jpeg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/dd53b8c7-131b-40bb-b5f0-8fd7f31dba83.jpeg",
+      "PackagePath": "staticwebassets/images/products/dd53b8c7-131b-40bb-b5f0-8fd7f31dba83.jpeg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/f4749ba5-2fcb-45e4-976b-a3480b79b283.jpeg",
+      "PackagePath": "staticwebassets/images/products/f4749ba5-2fcb-45e4-976b-a3480b79b283.jpeg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/f5db3cd2-829f-4473-875d-82af1af641e6.jpg",
+      "PackagePath": "staticwebassets/images/products/f5db3cd2-829f-4473-875d-82af1af641e6.jpg"
+    },
+    {
+      "Id": "/Users/data/Desktop/camera-shop-backend/camera-shop.API/wwwroot/images/products/f6456cb3-7c2e-4214-8fa5-76d15e5ec42d.jpeg",
+      "PackagePath": "staticwebassets/images/products/f6456cb3-7c2e-4214-8fa5-76d15e5ec42d.jpeg"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.camera-shop.API.props",

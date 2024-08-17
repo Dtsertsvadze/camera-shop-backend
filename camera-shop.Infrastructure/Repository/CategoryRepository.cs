@@ -1,9 +1,8 @@
-using camera_shop.Core.Entities;
-using camera_shop.Core.RepositoryContract;
-using camera_shop.Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
-
 namespace camera_shop.Infrastructure.Repository;
+using Core.Entities;
+using Core.RepositoryContract.Category;
+using Data;
+using Microsoft.EntityFrameworkCore;
 
 public class CategoryRepository : ICategoryReaderRepository
 {

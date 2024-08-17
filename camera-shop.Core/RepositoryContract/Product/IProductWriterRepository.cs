@@ -1,6 +1,5 @@
-using camera_shop.Core.Entities;
-
-namespace camera_shop.Core.RepositoryContract;
+namespace camera_shop.Core.RepositoryContract.Product;
+using Entities;
 
 public interface IProductWriterRepository
 {

@@ -1,9 +1,8 @@
-using camera_shop.Core.DTO;
-using camera_shop.Core.Entities;
-using camera_shop.Core.RepositoryContract;
-using camera_shop.Core.ServiceContract;
-
 namespace camera_shop.Application.Service;
+using Core.DTO.Category;
+using Core.Entities;
+using Core.RepositoryContract.Category;
+using Core.ServiceContract.Category;
 
 public class CategoryService : ICategoryReaderService
 {

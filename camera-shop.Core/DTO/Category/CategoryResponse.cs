@@ -1,4 +1,4 @@
-namespace camera_shop.Core.DTO;
+namespace camera_shop.Core.DTO.Category;
 
 public class CategoryResponse
 {

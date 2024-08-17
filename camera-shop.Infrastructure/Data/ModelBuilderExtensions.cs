@@ -22,5 +22,16 @@ public static class ModelBuilderExtensions
             new Category { Id = 12, Title = "Tripods", ParentCategoryId = 4 },
             new Category { Id = 13, Title = "Memory Cards", ParentCategoryId = 4 }
         );
+        
+        modelBuilder.Entity<ProductBrand>().HasData(
+            new ProductBrand { Id = 1, Name = "Canon" },
+            new ProductBrand { Id = 2, Name = "Nikon" },
+            new ProductBrand { Id = 3, Name = "Sony" },
+            new ProductBrand { Id = 4, Name = "Fujifilm" },
+            new ProductBrand { Id = 5, Name = "Panasonic" },
+            new ProductBrand { Id = 6, Name = "Olympus" },
+            new ProductBrand { Id = 7, Name = "Leica" },
+            new ProductBrand { Id = 8, Name = "Pentax" }
+        );
     }
 }

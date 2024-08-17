@@ -1,25 +1,28 @@
-using camera_shop.Core.ServiceContract;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 
 namespace camera_shop.Application.Service;
+using camera_shop.Core.ServiceContract.Image;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 
 public class FileSystemImageService : IImageService
 {
     private readonly string _imageDirectory;
     private readonly IWebHostEnvironment _environment;
+    private readonly ILogger<FileSystemImageService> _logger;
 
-    public FileSystemImageService(IWebHostEnvironment environment)
+    public FileSystemImageService(IWebHostEnvironment environment, ILogger<FileSystemImageService> logger)
     {
         _environment = environment;
         _imageDirectory = Path.Combine(_environment.WebRootPath, "images", "products");
+        _logger = logger;
     }
 
-    public async Task<string> SaveImageAsync(IFormFile imageFile)
+    public async Task<List<string>> SaveImagesAsync(List<IFormFile> imageFiles)
     {
-        if (imageFile == null || imageFile.Length == 0)
+        if (imageFiles == null || imageFiles.Count == 0)
         {
-            throw new ArgumentException("Invalid file");
+            throw new ArgumentException("No files were uploaded");
         }
 
         if (!Directory.Exists(_imageDirectory))
@@ -27,14 +30,63 @@ public class FileSystemImageService : IImageService
             Directory.CreateDirectory(_imageDirectory);
         }
 
-        var fileName = $"{Guid.NewGuid()}{Path.GetExtension(imageFile.FileName)}";
-        var filePath = Path.Combine(_imageDirectory, fileName);
+        var savedImagePaths = new List<string>();
 
-        await using (var stream = new FileStream(filePath, FileMode.Create))
+        foreach (var imageFile in imageFiles)
         {
-            await imageFile.CopyToAsync(stream);
+            if (imageFile.Length == 0)
+            {
+                continue; 
+            }
+
+            var fileName = $"{Guid.NewGuid()}{Path.GetExtension(imageFile.FileName)}";
+            var filePath = Path.Combine(_imageDirectory, fileName);
+
+            await using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await imageFile.CopyToAsync(stream);
+            }
+
+            savedImagePaths.Add($"/images/products/{fileName}");
         }
 
-        return $"/images/products/{fileName}";
+        if (savedImagePaths.Count == 0)
+        {
+            throw new InvalidOperationException("No valid images were uploaded");
+        }
+
+        return savedImagePaths;
     }
+
+    public async Task DeleteImagesAsync(List<string>? imageUrls)
+    {
+        if (imageUrls == null || imageUrls.Count == 0)
+        {
+            return;
+        }
+
+        foreach (var imageUrl in imageUrls)
+        {
+            try
+            {
+                var imagePath = Path.Combine(_environment.WebRootPath, imageUrl.TrimStart('/'));
+                if (File.Exists(imagePath))
+                {
+                    File.Delete(imagePath);
+                    _logger.LogInformation($"Deleted image: {imagePath}");
+                }
+                else
+                {
+                    _logger.LogWarning($"Image not found for deletion: {imagePath}");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Error deleting image: {imageUrl}");
+            }
+        }
+
+        await Task.CompletedTask;
+    }
+
 }

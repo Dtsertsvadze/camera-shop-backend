@@ -1,7 +1,6 @@
-using camera_shop.Core.DTO;
-using camera_shop.Core.Entities;
+namespace camera_shop.Core.RepositoryContract.Product;
+using Entities;
 
-namespace camera_shop.Core.RepositoryContract;
 
 public interface IProductReaderRepository
 {

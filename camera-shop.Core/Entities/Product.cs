@@ -20,10 +20,15 @@ public class Product
     [Range(0.01, 100000)]
     public decimal Price { get; set; }
     
-    public string? ImageUrl { get; set; }
+    public List<string>? ImageUrls { get; set; }
     
     public int CategoryId { get; set; }
     
     [ForeignKey("CategoryId")]
     public Category? Category { get; set; }
+    
+    [ForeignKey("BrandId")]
+    public int BrandId { get; set; }
+    
+    public ProductBrand? Brand { get; set; }
 }

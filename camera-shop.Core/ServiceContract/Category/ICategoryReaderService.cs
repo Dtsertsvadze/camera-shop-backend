@@ -1,6 +1,5 @@
-using camera_shop.Core.DTO;
-
-namespace camera_shop.Core.ServiceContract;
+namespace camera_shop.Core.ServiceContract.Category;
+using camera_shop.Core.DTO.Category;
 
 public interface ICategoryReaderService
 {
